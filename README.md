@@ -3,17 +3,13 @@
 ## Prerequisites
 
 - [Ruby](https://www.ruby-lang.org/en/downloads/)
-  - `>= 2.7`
-- [Bridgetown Gem](https://rubygems.org/gems/bridgetown)
-  - `gem install bridgetown -N`
 - [Node](https://nodejs.org)
-  - `>= 12`
 - [Yarn](https://yarnpkg.com)
 
 ## Install
 
 ```sh
-cd bridgetown-site-folder
+cd lee-sheppard-com
 bundle install && yarn install
 ```
 
@@ -21,7 +17,7 @@ bundle install && yarn install
 
 ## Development
 
-To start your site in development mode, run `bin/bridgetown start` and navigate to [localhost:4000](https://localhost:4000/)!
+To start the site in development mode, run `bin/bridgetown start` and navigate to [localhost:4000](https://localhost:4000/)!
 
 Use a [theme](https://github.com/topics/bridgetown-theme) or add some [plugins](https://www.bridgetownrb.com/plugins/) to get started quickly.
 

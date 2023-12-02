@@ -1,15 +1,59 @@
-.container {
-	margin: 100px auto;
-	width: 600px
+// body {
+// 	background-image: url(https://res.cloudinary.com/leesheppard/image/upload/v1696332461/backdrop_1400x900_dlixwf.webp);
+// 	background-repeat: no-repeat;
+// 	background-size: cover;
+// }
+
+* {
+	font-family: 'Inter', sans-serif;
 }
+
+body::before {
+	content: "";
+    position: absolute;
+		filter: blur(76px);
+    inset: 0px;
+    z-index: -100;
+    background-image: url(/images/header-gradient-l.svg);
+    background-repeat: no-repeat;
+    background-position: center top, center bottom;
+    background-size: 1400px;
+}
+
+.navbar {
+	background-color: unset !important;
+	min-height: 4.25rem !important;
+}
+
+.navbar-brand {
+	img {
+		transform: scale(4.5);
+    position: relative;
+    top: 4px;
+    left: 112px;
+	}
+}
+
+.navbar-link.is-active, 
+.navbar-link:focus, 
+.navbar-link:focus-within, 
+.navbar-link:hover, 
+a.navbar-item.is-active, 
+a.navbar-item:focus, 
+a.navbar-item:focus-within, 
+a.navbar-item:hover {
+	background-color: unset !important;
+	color: magenta !important;
+}
+
+.container {
+	width: 600px !important;
+}
+
 .grid-container {
 	display: grid;
 	gap: 0 0;
 	grid-template-columns: 90px 90px 90px 90px 90px;
-}
-
-.grid-item {
-	border: 1px solid rgba(255, 255, 255, 0.8);
 }
 
 .image {
@@ -21,6 +65,7 @@
 	&.one {
 		margin-top: 15px;
 		object-position: 20% 0;
+		transform: rotate(-3deg);
 	}
 
 	&.two {
@@ -30,6 +75,7 @@
 	&.three {
 		margin-top: 28px;
 		object-position: 55% 0;
+		transform: rotate(3deg);
 	}
 
 	&.four {
@@ -40,10 +86,58 @@
 	&.five {
 		margin-top: 15px;
 		object-position: 100% 0;
+		transform: rotate(4deg);
 	}
 }
 
 .signature {
 	display: flex;
 	flex-direction: row;
+}
+
+.glass {
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.quote {
+	// @extend .glass
+
+	background:linear-gradient(90deg,rgba(255,233,244,0.4) 0%,rgba(234,243,255,0.7) 100%);
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.quote figcaption {
+	font-style: italic;
+}
+
+.quote figcaption,
+.quote blockquote {
+  margin: .5em;
+}
+
+.container p {
+	font-size: 20px;
+	line-height: 140%;
+	font-weight: 400;
+	margin: 16px 0px;
+}
+
+footer .links {
+ a {
+	color: #ccc;
+ }
+}
+
+.peace img {
+	transform: scale(1);
+	position: absolute;
+	top: -50px;
+	left: 258px;
 }

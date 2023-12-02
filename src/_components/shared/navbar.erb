@@ -1,11 +1,35 @@
-<header>
-  <img src="<%= relative_url '/images/logo.svg' %>" alt="Logo" />
-</header>
+  <!--
+  <header>
+    <img src="<%= relative_url '/images/logo.svg' %>" alt="Logo" />
+  </header>
+  -->
 
-<nav>
-  <ul>
-    <li><a href="<%= relative_url '/' %>">Home</a></li>
-    <li><a href="<%= relative_url '/about' %>">About</a></li>
-    <li><a href="<%= relative_url '/posts' %>">Posts</a></li>
-  </ul>
+<nav class="navbar glass my-6 px-4" role="navigation" aria-label="main navigation">
+  
+  <div class="navbar-brand">
+    <a class="navbar-item" href="<%= relative_url '/' %>">
+      <img src="https://res.cloudinary.com/leesheppard/image/upload/v1496495524/Lee-Sheppard-Black_iv1j84.png">
+    </a>
+
+    <div class="peace">	
+      <img src="https://res.cloudinary.com/leesheppard/image/upload/c_crop,w_672/v1646191467/cactus/cactus_character_hippy.png" width="150">
+    </div>
+
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  
+  <div class="navbar-menu">
+    <div class="navbar-end">
+      <a class="navbar-item" href="https://www.threads.net/@leesheppard"><i class="fa-brands fa-threads"></i></a>
+      <a class="navbar-item" href="https://www.instagram.com/leesheppard"><i class="fa-brands fa-instagram"></i></a>
+      <a class="navbar-item" href="<%= relative_url '/about' %>">About</a>
+      <a class="navbar-item" href="<%= relative_url '/posts' %>">Posts</a>
+    </div>
+  </div>
+
 </nav>
+

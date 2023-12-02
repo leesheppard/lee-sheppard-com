@@ -2,20 +2,23 @@
 	font-family: 'Inter', sans-serif;
 }
 
+body {
+	padding: 2.5rem 0;
+}
+
 body::before {
 	content: "";
-    position: absolute;
-		filter: blur(76px);
-    inset: 0px;
-    z-index: -100;
-    background-image: url(/images/header-gradient-l.svg);
-    background-repeat: no-repeat;
-    background-position: center top, center bottom;
-    background-size: 1400px;
+	position: absolute;
+	filter: blur(76px);
+	inset: 0px;
+	z-index: -100;
+	background-image: url(/images/header-gradient-l.svg);
+	background-repeat: no-repeat;
+	background-position: center top, center bottom;
+	background-size: 1400px;
 }
 
 .navbar {
-	background-color: unset !important;
 	min-height: 4.25rem !important;
 }
 
@@ -38,6 +41,42 @@ a.navbar-item:focus-within,
 a.navbar-item:hover {
 	background-color: unset !important;
 	color: magenta !important;
+}
+
+.navbar-burger {
+	z-index: 99999;
+}
+
+.navbar-burger:hover {
+	background-color: unset !important;
+}
+
+@media screen and (max-width: 1023px) {
+
+main {
+	padding: 0 1rem;
+} 
+
+.navbar-menu {
+	transition: all .75s ease;
+}
+
+.navbar-menu.is-active {
+	background-color: rgb(245, 243, 238);
+	background-image: url(https://res.cloudinary.com/leesheppard/image/upload/c_thumb,w_500,g_face/v1698233841/Ruby%20Kraken.png);
+	background-position: bottom;
+	background-repeat: no-repeat;
+	display: block;
+	font-size: xx-large;
+	min-height: 100vh;
+	padding: 10rem 1rem;
+	position: absolute;
+	top: -88px;
+	right: 0%;
+	width: 100%;
+	text-align: right;
+	z-index: 9999;
+	}
 }
 
 .container {

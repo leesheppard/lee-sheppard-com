@@ -1,4 +1,4 @@
-<nav class="navbar glass my-6 px-4" role="navigation" aria-label="main navigation">
+<nav class="navbar is-transparent glass my-6 px-4" role="navigation" aria-label="main navigation">
   
   <div class="navbar-brand">
     <a class="navbar-item" href="<%= relative_url '/' %>">
@@ -9,17 +9,21 @@
       <img src="https://res.cloudinary.com/leesheppard/image/upload/c_crop,w_672/v1646191467/cactus/cactus_character_hippy.png" width="150">
     </div>
 
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+    <a role="button" class="navbar-burger mt-2" data-target="navMenu" aria-label="menu" aria-expanded="false">
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
     </a>
   </div>
   
-  <div class="navbar-menu">
+  <div class="navbar-menu" id="navMenu">
     <div class="navbar-end">
-      <a class="navbar-item" href="https://www.threads.net/@leesheppard"><i class="fa-brands fa-threads"></i></a>
-      <a class="navbar-item" href="https://www.instagram.com/leesheppard"><i class="fa-brands fa-instagram"></i></a>
+      <a class="navbar-item" href="https://www.threads.net/@leesheppard">
+        <i class="fa-brands fa-threads"></i> <span class="is-hidden-desktop">Threads</span>
+      </a>
+      <a class="navbar-item" href="https://www.instagram.com/leesheppard">
+        <i class="fa-brands fa-instagram"></i> <span class="is-hidden-desktop">Instagram</span>
+      </a>
       <a class="navbar-item" href="<%= relative_url '/about' %>">About</a>
       <a class="navbar-item" href="<%= relative_url '/posts' %>">Posts</a>
     </div>

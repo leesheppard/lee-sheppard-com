@@ -8,7 +8,7 @@ import { Application } from "@hotwired/stimulus"
  * Use data-turbo-transition="false" on your <main> element for pages where
  * you don't want any transition animation.
  */
-// import "./turbo_transitions.js"
+import "./turbo_transitions.js"
 
 /**
  * Adds support for declarative shadow DOM. Requires your HTML <head> to include:
@@ -24,7 +24,7 @@ import * as TurboShadow from "turbo-shadow"
 import "./turbo_transitions.js"
 
 // Import all JavaScript & CSS files from src/_components
-import components from "$components/**/*.{js,jsx,js.rb,css}"
+// import components from "$components/**/*.{js,jsx,js.rb,css}"
 
 console.info("Bridgetown is loaded!")
 

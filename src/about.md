@@ -20,7 +20,7 @@ title: About Lee
     <img class="image five" src="https://res.cloudinary.com/leesheppard/image/upload/v1679958092/photos/lee_sheppard_profile.jpg" width="100">
   </div>
 </div>
-I've been a professional cartoonist since I was 15 years old. I've headed up for
+I've been a professional cartoonist since I was 15 years old. I've headed up
 the world's oldest cartoonists association as VP and organised many conferences along
 the way. I've worked in animation studios on productions for many major film and
 television networks. It has been a long road since that first paid published drawing

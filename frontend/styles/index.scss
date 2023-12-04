@@ -2,20 +2,16 @@
 	font-family: 'Inter', sans-serif;
 }
 
-body {
-	padding: 2.5rem 0;
-}
-
 body::before {
+	background-image: url(/images/header-gradient-l.svg);
+	background-repeat: no-repeat;
+	background-position: center top, center bottom;
+	background-size: 1400px;
 	content: "";
 	position: absolute;
 	filter: blur(76px);
 	inset: 0px;
 	z-index: -100;
-	background-image: url(/images/header-gradient-l.svg);
-	background-repeat: no-repeat;
-	background-position: center top, center bottom;
-	background-size: 1400px;
 }
 
 .navbar {
@@ -51,36 +47,57 @@ a.navbar-item:hover {
 	background-color: unset !important;
 }
 
-@media screen and (max-width: 1023px) {
-
-main {
-	padding: 0 1rem;
-} 
-
-.navbar-menu {
-	transition: all .75s ease;
-}
-
-.navbar-menu.is-active {
-	background-color: rgb(245, 243, 238);
-	background-image: url(https://res.cloudinary.com/leesheppard/image/upload/c_thumb,w_500,g_face/v1698233841/Ruby%20Kraken.png);
-	background-position: bottom;
-	background-repeat: no-repeat;
-	display: block;
-	font-size: xx-large;
-	min-height: 100vh;
-	padding: 10rem 1rem;
-	position: absolute;
-	top: -88px;
-	right: 0%;
-	width: 100%;
-	text-align: right;
-	z-index: 9999;
+@media screen and (min-width: 1024px) {
+	.content {
+		width: 708px;
 	}
 }
 
-.container {
-	width: 600px !important;
+@media screen and (max-width: 798px) {
+
+	.content {
+		width: 390px;
+	}
+
+	main {
+		padding: 0 1rem;
+	} 
+
+	.navbar-menu {
+		transition: all .75s ease;
+	}
+
+	.navbar-menu.is-active {
+		background-color: rgb(245, 243, 238);
+		background-image: url(https://res.cloudinary.com/leesheppard/image/upload/c_thumb,w_500,g_face/v1698233841/Ruby%20Kraken.png);
+		background-position: bottom;
+		background-repeat: no-repeat;
+		background-size: contain;
+		display: block;
+		font-size: xx-large;
+		min-height: 100vh;
+		padding: 10rem 1rem;
+		position: absolute;
+		top: -88px;
+		right: 0%;
+		width: 100%;
+		text-align: right;
+		z-index: 9999;
+	}
+
+	.navbar-brand img {
+		transform: scale(3.5);
+		position: relative;
+		top: 4px;
+		left: 66px;
+	}
+
+	.peace img {
+		transform: scale(1);
+    position: absolute;
+    top: -50px;
+		left: 190px !important;
+	}
 }
 
 .grid-container {

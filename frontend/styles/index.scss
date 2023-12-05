@@ -47,6 +47,13 @@ a.navbar-item:hover {
 	background-color: unset !important;
 }
 
+.content footer figure blockquote {
+	background-color: unset;
+	border-left: unset;
+	font-weight: 700;
+	padding: unset;
+}
+
 @media screen and (min-width: 1024px) {
 	.content {
 		width: 600px;
